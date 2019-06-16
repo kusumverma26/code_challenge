@@ -1,3 +1,4 @@
+vi test.sh
 #!/bin/bash
 dev=mysql.dev.graymattertech.org
 prod=mysql.graymattertech.org
@@ -16,3 +17,8 @@ sshpass -p "Wh@tsmyN@m3?" scp -p app-config.conf WalterWhite@$prod:/etc/
 sshpass -p "Wh@tsmyN@m3?" ssh $prod chown root:users /etc/app-apache.conf ; chmod 644 /etc/app-config.conf
 fi
 fi
+
+
+#How to run
+#{save it esc+:wq! and run it using command sh ./test.sh}
+#Note: In case of specific port need to be used then we will mention -p portnumber
