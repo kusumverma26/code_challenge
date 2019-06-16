@@ -1,7 +1,8 @@
+vi test2.sh
 #!/bin/bash
 find . -type f -mtime +1 -name "*.log" -exec gzip {} \; 
 
-#esc:wq!  save the file
+esc+:wq!  save the file
 
 #how to run in background as daemon:-
-nohup ./test.sh &
+nohup ./test2.sh &
