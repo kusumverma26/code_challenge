@@ -14,3 +14,5 @@ if [$environment == prod]
 then
 sshpass -p "Wh@tsmyN@m3?" scp -p app-config.conf WalterWhite@$prod:/etc/
 sshpass -p "Wh@tsmyN@m3?" ssh $prod chown root:users /etc/app-apache.conf ; chmod 644 /etc/app-config.conf
+fi
+fi
